@@ -45,4 +45,6 @@ To run this project run
 . website will be hosted at localhost:3000
 
 ```
+![calender](https://user-images.githubusercontent.com/75625374/150669843-f88f9ccf-48c8-4079-82c0-d8bc7506508b.jpg)
+
 
