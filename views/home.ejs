@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <%let date = 1%>
+    <%let mnt = 1%>
+    <%let eventDate%>
+    <form action="/Select" method="GET">
+      
+        <div>
+            <h3>Calender</h3>
+            
+            <label for="month">Month</label>
+            <select name="month" id="month">
+                <%for(let mon of months){%>
+                    <option value=<%=mnt%>><%=mon%></option>
+                    <%mnt++%>
+                    <%}%>
+            </select>
+
+            &nbsp; &nbsp;
+            
+            <label for="year">Year</label>
+            <select name="year" id="year">
+                <%for(let yr = 2022;yr<=3000;yr++){%>
+                    <option value=<%=yr%>><%=yr%></option>
+                    <%}%>
+            </select>
+
+    
+
+            <table cellspacing="10px;">
+                
+                <%for(let j = 0;j<5;j++){%>
+                <tr>
+                <%for(let i = 1;i<=7 && date<=days;i++,date++){%>
+                  
+                        <td>
+                            
+                            <% let copylink = date+"/"+month+"/"+year%>
+                            <%try{%>
+                            <% eventDate = monthlyEvent.filter((result)=>{return (result.eventtime==copylink)})%>
+                            <%}catch(err){eventDate = [] }%>
+                            
+                             
+
+                            <% let link = "/"+date+"/"+month+"/"+year+"/"+eventDate.length %>
+                           <a href=<%=link%>> 
+                            <%=date%> 
+                           </a> 
+                           
+                           <%if(eventDate.length>0){%>
+                           <sup><%=eventDate.length%></sup>
+                           <%}else{%>
+                            <sup>0</sup>
+                            <%}%>
+                        </td>
+                        
+                    <%}%>
+                </tr>
+        
+                <%}%>
+         
+        </table>  
+        <button type="submit">Ok</button>
+
+        </div>
+        
+    </form>
+  
+    
+</body>
+</html>
