@@ -45,6 +45,11 @@ To run this project run
 . website will be hosted at localhost:3000
 
 ```
-![calender](https://user-images.githubusercontent.com/75625374/150669843-f88f9ccf-48c8-4079-82c0-d8bc7506508b.jpg)
+![clenderUI](https://user-images.githubusercontent.com/75625374/151361254-0dbbd276-e530-4a61-9c9b-b64bb0337161.jpg)
+
+
+![clend![calenderUIopt](https://user-images.githubusercontent.com/75625374/151361145-812e974b-76c3-45c7-8e8a-4ef1b34009b5.jpg)
+
+![calenderUIopt1](https://user-images.githubusercontent.com/75625374/151361214-79a9d48b-d304-443a-a325-6b20f20b7403.jpg)
 
 
