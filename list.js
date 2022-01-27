@@ -10,15 +10,6 @@ const loadFile = ()=>{
     }
 }
 
-// const LoadEventUser = ()=>{
-//     try{
-//         const dataFile = fs.readFileSync('eventUser.txt');
-//         const parseDataFile = dataFile.toString();
-//         return JSON.parse(parseDataFile);
-//     }catch(e){
-//         return [];
-//     }
-// }
 
 module.exports = {
     loadFile: loadFile  
