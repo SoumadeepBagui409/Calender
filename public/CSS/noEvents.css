@@ -1,0 +1,20 @@
+div{
+    width: 400px ;
+    margin: 10px auto;
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    text-align: center;
+    margin-top:200px;
+}
+body{
+    background-color: #ffb700;
+}
+a{
+    text-decoration: none;
+    color: snow;
+    background-color: black;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

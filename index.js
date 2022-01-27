@@ -47,12 +47,13 @@ app.get('/',(req,res)=>{
 app.get('/:date/:month/:year/:eventSize',(req,res)=>{
    const {date,month,year,eventSize} = req.params;
    if(eventSize==0){
-       return res.redirect('/');
+       return res.render("NoEvents");
    }
    let evtDate = date+'/'+month+'/'+year;
    const value = list.loadFile();
    const eventNamer = value.filter((result)=> (result.eventtime==evtDate));
-   res.send(eventNamer);
+   //res.send(eventNamer);
+  res.render("showEvent",{eventNamer:eventNamer,evtDate:evtDate});
 
 })
 
