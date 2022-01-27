@@ -31,15 +31,20 @@ div{
 }
 
 a{
+    font-size: 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-weight: 900;
  
 }
 sup{
-    font-size: 10px;
-    color: rgb(12, 12, 12);
+    font-size: 15px;
+    background-color: rgb(0, 24, 19);
+    color: gold;
     font-weight: 700;
     text-shadow: 1px 1px 1px white;
+    padding: 3px;
+    border-radius: 50%;
 }
 
 button{
